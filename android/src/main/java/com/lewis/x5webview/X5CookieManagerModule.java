@@ -121,4 +121,22 @@ public class X5CookieManagerModule extends ReactContextBaseJavaModule {
         mCookieHandler.put(uri, cookieMap);
     }
 
+    /**
+     * 原生端登录需要执行此方法将token 信息同步到H5的webview,且这里为X5 webview
+     *
+     * @param url
+     * @param tokenName
+     * @param tokenCity
+     * @param authData
+     * @param cityData
+     * @param callback  RN调用此本地方法时的回调
+     *                  WritableMap map = Arguments.createMap();
+     *                  map.putBoolean("success", true);
+     *                  callback.invoke(map);
+     */
+    @ReactMethod
+    public void syncX5Cookie(String url, String tokenName, String tokenCity, String authData, String cityData, Callback callback) {
+        CookieUtils.syncX5Cookie(getReactApplicationContext(), url, tokenName, tokenCity, authData, cityData);
+    }
+
 }

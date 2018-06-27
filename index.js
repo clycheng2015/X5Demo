@@ -1,3 +1,4 @@
 //index.js
-import React, { NativeModules } from 'react-native';
-module.exports = NativeModules.X5RNCookieManager;
+import Cookie from './cookie';
+import X5WebView from './X5WebView';
+export {Cookie,X5WebView};
