@@ -1,0 +1,18 @@
+{
+  "name": "react-native-x5webviewcookie",
+  "version": "1.0.0",
+  "description": "sync cookie to x5webview but not chrome webview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clycheng2015/X5Demo.git"
+  },
+  "keywords": [
+    "142536"
+  ],
+  "author": "lewischeng",
+  "license": "ISC"
+}
